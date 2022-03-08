@@ -5,6 +5,9 @@ public class Route {
 	private Route(){}
 
 	public static final String HEALTH = "/health";
+	
+	public static final String COUNTRY_BASE = "/country";
+	public static final String COUNTRY_BY_NAME = "/country/like-name/{name}";
 
 }
 	
