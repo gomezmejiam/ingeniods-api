@@ -1,4 +1,4 @@
-package com.ingeniods.api.client.configuration;
+package com.ingeniods.api.common.exception;
 
 import java.util.Optional;
 

@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.ingeniods.api.common.exception.DefaultStatusCode;
 import com.ingeniods.api.common.exception.IngenioException;
 import com.ingeniods.api.common.response.ErrorResponse;
 

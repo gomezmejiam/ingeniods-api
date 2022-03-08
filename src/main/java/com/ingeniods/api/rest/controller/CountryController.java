@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ingeniods.api.client.CountryClient;
 import com.ingeniods.api.common.response.CountryResponse;
+import com.ingeniods.api.core.services.CountryService;
 
 @RestController
 public class CountryController {
@@ -20,16 +20,16 @@ public class CountryController {
 	private static final String CLASS =  CountryController.class.getName();
 	private Logger logger = LoggerFactory.getLogger(CountryController.class);
 	
-	private CountryClient countryService;
+	private CountryService countryService;
 	
-	public CountryController(CountryClient countryService) {
+	public CountryController(CountryService countryService) {
 		this.countryService = countryService;
 	}
 		
 	@GetMapping(COUNTRY_BASE)
 	public List<CountryResponse> allCountries(){
 		logger.info("{}::allCountries ",CLASS);
-		return countryService.getAll();
+		return countryService.allCountries();
 	}
 	
 	@GetMapping(COUNTRY_BY_NAME)

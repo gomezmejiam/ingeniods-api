@@ -1,6 +1,6 @@
-package com.ingeniods.api.rest.handler;
+package com.ingeniods.api.rest.exception;
 
-import com.ingeniods.api.client.configuration.DefaultStatusCode;
+import com.ingeniods.api.common.exception.DefaultStatusCode;
 import com.ingeniods.api.common.exception.IngenioException;
 import com.ingeniods.api.common.response.ErrorResponse;
 
