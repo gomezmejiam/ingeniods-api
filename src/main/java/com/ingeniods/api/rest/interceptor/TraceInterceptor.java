@@ -1,8 +1,8 @@
 package com.ingeniods.api.rest.interceptor;
 
 import static com.ingeniods.api.common.Constant.LOG_CORRELATION_ID;
+import static com.ingeniods.api.rest.configuration.tracing.TracingConfiguration.CORRELATION_ID;
 import static com.ingeniods.api.common.Constant.EMPTY_STRING;
-import static com.ingeniods.api.rest.configuration.TracingConfiguration.CORRELATION_ID;
 
 import java.util.Optional;
 import java.util.UUID;

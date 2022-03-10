@@ -19,7 +19,7 @@ public class AppoinmentService {
 	
 	public void asingAppoinment(){
 		logger.info("{}::asingAppoinment ",CLASS);
-		appoinmentClient.asingAppoinment();
+		appoinmentClient.asingAppoinment("ertyuil");
 	}
 	
 }

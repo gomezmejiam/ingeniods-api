@@ -22,8 +22,8 @@ public class AppoinmentController {
 	}
 		
 	@PostMapping(APPOINMENT_ASING)
-	public void allCountries(){
-		logger.info("{}::allCountries ",CLASS);
+	public void asingAppoinment(){
+		logger.info("{}::asingAppoinment ",CLASS);
 		appoinmentService.asingAppoinment();
 	}
 	
