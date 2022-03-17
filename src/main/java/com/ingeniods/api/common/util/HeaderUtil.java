@@ -2,6 +2,7 @@ package com.ingeniods.api.common.util;
 
 import static com.ingeniods.api.common.Constant.EMPTY_STRING;
 import static com.ingeniods.api.common.Constant.LOG_CORRELATION_ID;
+import static com.ingeniods.api.common.Constant.LOG_USER_ID;
 
 import java.util.Optional;
 
@@ -12,6 +13,10 @@ public class HeaderUtil {
 	
 	public static String getTrasactionId() {
 		return getHeaderByName(LOG_CORRELATION_ID);
+	}
+	
+	public static String getUserId() {
+		return getHeaderByName(LOG_USER_ID);
 	}
 	
 	public static String getHeaderByName(String name) {
